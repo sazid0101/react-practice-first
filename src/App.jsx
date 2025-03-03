@@ -1,6 +1,6 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+// import { useState } from 'react'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'
 import './App.css'
 import Todo from './todo'
 
@@ -11,6 +11,10 @@ function App() {
     <>
       
       <h1>Vite + React</h1>
+      <button onClick={handleClick}>click me</button>
+      <button onClick={handleClick2}>click me2</button>
+      <button onClick={()=>{alert("button 3 clicked")}}>click me3</button>
+      <button onClick={()=> handleClick4(7)}>click me4</button>
       <MyName></MyName>
       <Developer></Developer>
       <Product name="laptop" price="50000"></Product>
@@ -24,6 +28,18 @@ function App() {
     
     </>
   )
+}
+//func7
+const handleClick4 = (num) =>{
+  alert(num +1)
+}
+//function6
+const handleClick2 = () =>{
+  alert("button 2 clicked")
+}
+// function5
+function handleClick(){
+  alert("clicked")
 }
 //function 4
 // const {grade,marks} = {grade : '3.5', marks : '70'} 
