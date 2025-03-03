@@ -4,6 +4,7 @@
 import './App.css'
 import Todo from './todo'
 import Counter from './count'
+import Users from './users'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -12,6 +13,7 @@ function App() {
     <>
       
       <h1>Vite + React</h1>
+      <Users></Users>
       <Counter></Counter>
       <button onClick={handleClick}>click me</button>
       <button onClick={handleClick2}>click me2</button>
