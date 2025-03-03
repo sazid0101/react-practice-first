@@ -3,6 +3,7 @@
 // import viteLogo from '/vite.svg'
 import './App.css'
 import Todo from './todo'
+import Counter from './count'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -11,6 +12,7 @@ function App() {
     <>
       
       <h1>Vite + React</h1>
+      <Counter></Counter>
       <button onClick={handleClick}>click me</button>
       <button onClick={handleClick2}>click me2</button>
       <button onClick={()=>{alert("button 3 clicked")}}>click me3</button>
