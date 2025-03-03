@@ -58,7 +58,7 @@ function Student({grade='2',marks='50'}){
 //function3
 
 function Product(props){
-  console.log(props)
+  // console.log(props)
   return(
     <div >
       <h3>this is my product: {props.name}, price : {props.price}</h3>
